@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Us - Wellness Hub. Learn about our mission, team, and commitment to health education.">
+    <meta name="robots" content="index, follow">
+    <title>About Us - Wellness Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        .about-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .about-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .about-main {
+            padding: 4rem 0;
+        }
+        .mission-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        .mission-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+        .mission-text p {
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .team-section {
+            background: var(--light-bg);
+            padding: 4rem 0;
+            margin-top: 3rem;
+        }
+        .team-section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .team-member {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .team-member h3 {
+            font-size: 1.3rem;
+            margin: 1rem 0 0.5rem;
+            color: var(--text-color);
+        }
+        .team-member .position {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .team-member p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .mission-section {
+                grid-template-columns: 1fr;
+            }
+            .about-hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Wellness Hub</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <div class="about-hero">
+        <div class="container">
+            <h1>About Wellness Hub</h1>
+            <p>Your Partner in Health and Wellness Excellence</p>
+        </div>
+    </div>
+
+    <!-- About Main Content -->
+    <div class="about-main">
+        <div class="container">
+            <!-- Mission Section -->
+            <div class="mission-section">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1522202176988-696ce0c50d97?w=500&h=400&fit=crop" alt="Team collaboration in wellness" style="border-radius: 8px;">
+                </div>
+                <div class="mission-text">
+                    <h2>Our Mission</h2>
+                    <p>At Wellness Hub, our mission is to empower individuals to take control of their health through education, expert guidance, and practical wellness tips. We believe that everyone deserves access to accurate, evidence-based health information.</p>
+                    <p>We are dedicated to creating a supportive community where wellness enthusiasts, fitness professionals, and health advocates come together to share knowledge and inspire positive lifestyle changes.</p>
+                </div>
+            </div>
+
+            <!-- Values Section -->
+            <div class="mission-section">
+                <div class="mission-text">
+                    <h2>Our Values</h2>
+                    <p><strong>Integrity:</strong> We provide honest, evidence-based information backed by scientific research and expert insights.</p>
+                    <p><strong>Accessibility:</strong> We make wellness education available and understandable to everyone, regardless of their current health status.</p>
+                    <p><strong>Community:</strong> We foster a supportive environment where individuals can learn, share, and grow together.</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=400&fit=crop" alt="Wellness community" style="border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="team-section">
+        <div class="container">
+            <h2>Our Expert Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="Team member" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto;">
+                    <h3>Sarah Johnson</h3>
+                    <p class="position">Fitness Coach & Wellness Expert</p>
+                    <p>With over 10 years of experience in fitness coaching, Sarah specializes in personalized workout routines and lifestyle transformation.</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Team member" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto;">
+                    <h3>Dr. Michael Chen</h3>
+                    <p class="position">Registered Dietitian</p>
+                    <p>Dr. Chen brings expertise in nutritional science and helps design sustainable, healthy diet plans for various health goals.</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Team member" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto;">
+                    <h3>Emily Rodriguez</h3>
+                    <p class="position">Mental Health Counselor</p>
+                    <p>Emily is a certified mental health professional dedicated to helping individuals achieve emotional wellness and stress management.</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Team member" style="width: 120px; height: 120px; border-radius: 50%; margin: 0 auto;">
+                    <h3>James Wilson</h3>
+                    <p class="position">Yoga Instructor & Wellness Advocate</p>
+                    <p>James combines ancient yoga practices with modern wellness techniques to promote holistic health and flexibility.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#blog">Blog</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <p>Wellness Hub is your trusted source for health and wellness information.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Wellness Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

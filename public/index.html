@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RecipeHub - Discover thousands of delicious recipes from around the world. Easy-to-follow cooking instructions, ingredient lists, and nutritional information.">
+    <meta name="keywords" content="recipes, cooking, food, easy recipes, healthy recipes, desserts, breakfast, lunch, dinner">
+    <meta name="author" content="RecipeHub">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="RecipeHub - Discover Amazing Recipes">
+    <meta property="og:description" content="Explore thousands of delicious recipes from cuisines around the world. Cook like a pro with our detailed guides.">
+    <meta property="og:image" content="https://yourwebsite.com/og-image.png">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#FF6B4A">
+    <title>RecipeHub - Discover Amazing Recipes | Easy Cooking Guides</title>
+    <link rel="canonical" href="https://yourwebsite.com/">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>RecipeHub</span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Discover Amazing Recipes</h1>
+                    <p>Explore thousands of delicious recipes from cuisines around the world. Easy-to-follow instructions, ingredient lists, and nutritional information all in one place.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('recipes').scrollIntoView({behavior: 'smooth'})">
+                            <i class="fas fa-arrow-right"></i> Explore Recipes
+                        </button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+                            <i class="fas fa-info-circle"></i> Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-showcase">
+                        <svg viewBox="0 0 400 300" class="svg-image">
+                            <!-- Background -->
+                            <rect width="400" height="300" fill="#f5f5f5"/>
+                            
+                            <!-- Plate -->
+                            <circle cx="200" cy="150" r="120" fill="white" stroke="#FF6B4A" stroke-width="2"/>
+                            <circle cx="200" cy="150" r="115" fill="none" stroke="#FFB6A3" stroke-width="1" stroke-dasharray="5,5"/>
+                            
+                            <!-- Food items -->
+                            <!-- Salad -->
+                            <g transform="translate(150, 100)">
+                                <ellipse cx="0" cy="0" rx="25" ry="20" fill="#2ECC71"/>
+                                <circle cx="-15" cy="-10" r="8" fill="#27AE60"/>
+                                <circle cx="15" cy="-5" r="7" fill="#27AE60"/>
+                                <circle cx="-5" cy="10" r="6" fill="#27AE60"/>
+                            </g>
+                            
+                            <!-- Meat/Protein -->
+                            <g transform="translate(250, 120)">
+                                <rect x="-20" y="-15" width="40" height="25" fill="#C0392B" rx="3"/>
+                                <circle cx="-10" cy="-8" r="3" fill="#A93226"/>
+                                <circle cx="10" cy="-5" r="3" fill="#A93226"/>
+                                <circle cx="0" cy="5" r="2" fill="#A93226"/>
+                            </g>
+                            
+                            <!-- Vegetables -->
+                            <g transform="translate(200, 180)">
+                                <circle cx="-15" cy="0" r="12" fill="#F39C12"/>
+                                <circle cx="0" cy="-5" r="10" fill="#E67E22"/>
+                                <circle cx="15" cy="0" r="11" fill="#F39C12"/>
+                            </g>
+                            
+                            <!-- Fork and Knife -->
+                            <g transform="translate(100, 150)">
+                                <!-- Fork -->
+                                <line x1="0" y1="0" x2="0" y2="40" stroke="#888" stroke-width="2"/>
+                                <line x1="-8" y1="5" x2="-8" y2="35" stroke="#888" stroke-width="1.5"/>
+                                <line x1="0" y1="5" x2="0" y2="35" stroke="#888" stroke-width="1.5"/>
+                                <line x1="8" y1="5" x2="8" y2="35" stroke="#888" stroke-width="1.5"/>
+                            </g>
+                            
+                            <!-- Chef hat decoration -->
+                            <g transform="translate(320, 40)">
+                                <polygon points="0,0 -20,-40 20,-40" fill="#FF6B4A"/>
+                                <rect x="-22" y="0" width="44" height="8" fill="#FF6B4A"/>
+                                <circle cx="0" cy="-35" r="3" fill="#FFB6A3"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES PREVIEW ==================== -->
+    <section class="features-preview">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Thousands of Recipes</h3>
+                    <p>Browse thousands of delicious recipes from every cuisine imaginable</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Quick & Easy</h3>
+                    <p>Find recipes based on cooking time - from 5 minutes to gourmet dishes</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Healthy Options</h3>
+                    <p>Nutritional information and healthy alternatives for every recipe</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>User Ratings</h3>
+                    <p>See ratings from thousands of home cooks who've tried these recipes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== RECIPE SEARCH & BROWSE ==================== -->
+    <section class="recipes-section" id="recipes">
+        <div class="container">
+            <h2>Browse Recipes</h2>
+            <p class="section-subtitle">Find your next favorite dish</p>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for recipes, ingredients, or cuisines...">
+                <button class="btn btn-primary">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+
+            <!-- Featured Recipes -->
+            <div class="recipes-grid">
+                <!-- Recipe Card 1 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <svg viewBox="0 0 300 200" class="recipe-svg">
+                            <rect width="300" height="200" fill="#f9f9f9"/>
+                            <circle cx="150" cy="100" r="80" fill="white" stroke="#FF6B4A" stroke-width="2"/>
+                            <g transform="translate(150, 100)">
+                                <ellipse cx="0" cy="0" rx="70" ry="60" fill="#FFD580"/>
+                                <ellipse cx="-30" cy="-20" rx="20" ry="25" fill="#FF6B4A"/>
+                                <ellipse cx="30" cy="-15" rx="22" ry="28" fill="#FF6B4A"/>
+                                <circle cx="0" cy="30" r="15" fill="#2ECC71"/>
+                            </g>
+                            <text x="150" y="190" font-size="16" font-weight="bold" text-anchor="middle" fill="#FF6B4A">Pasta</text>
+                        </svg>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Classic Spaghetti Carbonara</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 20 min</span>
+                            <span><i class="fas fa-fire"></i> 450 cal</span>
+                            <span><i class="fas fa-star"></i> 4.8 (245)</span>
+                        </div>
+                        <p>Authentic Italian pasta with creamy sauce and pancetta. Quick, easy, and delicious!</p>
+                        <button class="btn btn-small">
+                            <i class="fas fa-arrow-right"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 2 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <svg viewBox="0 0 300 200" class="recipe-svg">
+                            <rect width="300" height="200" fill="#f9f9f9"/>
+                            <circle cx="150" cy="100" r="80" fill="white" stroke="#FF6B4A" stroke-width="2"/>
+                            <g transform="translate(150, 100)">
+                                <rect x="-40" y="-50" width="80" height="90" fill="#D2691E" rx="5"/>
+                                <circle cx="-20" cy="-10" r="8" fill="#8B4513"/>
+                                <circle cx="0" cy="-15" r="7" fill="#8B4513"/>
+                                <circle cx="20" cy="-8" r="8" fill="#8B4513"/>
+                                <text x="0" y="30" font-size="18" font-weight="bold" text-anchor="middle" fill="#FF6B4A">Bread</text>
+                            </g>
+                            <text x="150" y="190" font-size="16" font-weight="bold" text-anchor="middle" fill="#FF6B4A">Baking</text>
+                        </svg>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Homemade Sourdough Bread</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 24h</span>
+                            <span><i class="fas fa-fire"></i> 280 cal</span>
+                            <span><i class="fas fa-star"></i> 4.9 (189)</span>
+                        </div>
+                        <p>Artisan sourdough with perfect crust and soft interior. Patience required but worth it!</p>
+                        <button class="btn btn-small">
+                            <i class="fas fa-arrow-right"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 3 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <svg viewBox="0 0 300 200" class="recipe-svg">
+                            <rect width="300" height="200" fill="#f9f9f9"/>
+                            <circle cx="150" cy="100" r="80" fill="white" stroke="#FF6B4A" stroke-width="2"/>
+                            <g transform="translate(150, 100)">
+                                <ellipse cx="0" cy="0" rx="60" ry="50" fill="#90EE90"/>
+                                <circle cx="-25" cy="-15" r="12" fill="#F39C12"/>
+                                <circle cx="20" cy="-10" r="11" fill="#F39C12"/>
+                                <circle cx="0" cy="25" r="13" fill="#F39C12"/>
+                                <text x="0" y="60" font-size="12" text-anchor="middle" fill="#FF6B4A">Salad</text>
+                            </g>
+                            <text x="150" y="190" font-size="16" font-weight="bold" text-anchor="middle" fill="#FF6B4A">Healthy</text>
+                        </svg>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Mediterranean Salad Bowl</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 15 min</span>
+                            <span><i class="fas fa-fire"></i> 220 cal</span>
+                            <span><i class="fas fa-star"></i> 4.7 (312)</span>
+                        </div>
+                        <p>Fresh, colorful salad loaded with vegetables, feta cheese, and olive oil dressing.</p>
+                        <button class="btn btn-small">
+                            <i class="fas fa-arrow-right"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 4 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <svg viewBox="0 0 300 200" class="recipe-svg">
+                            <rect width="300" height="200" fill="#f9f9f9"/>
+                            <circle cx="150" cy="100" r="80" fill="white" stroke="#FF6B4A" stroke-width="2"/>
+                            <g transform="translate(150, 100)">
+                                <rect x="-50" y="-40" width="100" height="70" fill="#8B4513" rx="5"/>
+                                <ellipse cx="-25" cy="-15" rx="15" ry="20" fill="#D2691E"/>
+                                <ellipse cx="0" cy="-20" rx="16" ry="22" fill="#D2691E"/>
+                                <ellipse cx="25" cy="-15" rx="14" ry="20" fill="#D2691E"/>
+                                <text x="0" y="40" font-size="14" font-weight="bold" text-anchor="middle" fill="#FF6B4A">Cookies</text>
+                            </g>
+                            <text x="150" y="190" font-size="16" font-weight="bold" text-anchor="middle" fill="#FF6B4A">Dessert</text>
+                        </svg>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Chocolate Chip Cookies</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 30 min</span>
+                            <span><i class="fas fa-fire"></i> 180 cal</span>
+                            <span><i class="fas fa-star"></i> 4.9 (567)</span>
+                        </div>
+                        <p>Classic American cookies with melted chocolate chips. Chewy and delicious!</p>
+                        <button class="btn btn-small">
+                            <i class="fas fa-arrow-right"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 5 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <svg viewBox="0 0 300 200" class="recipe-svg">
+                            <rect width="300" height="200" fill="#f9f9f9"/>
+                            <circle cx="150" cy="100" r="80" fill="white" stroke="#FF6B4A" stroke-width="2"/>
+                            <g transform="translate(150, 100)">
+                                <ellipse cx="0" cy="0" rx="65" ry="55" fill="#FF6347"/>
+                                <circle cx="-20" cy="-20" r="10" fill="#FFB6A3"/>
+                                <circle cx="15" cy="-25" r="9" fill="#FFB6A3"/>
+                                <circle cx="0" cy="20" r="8" fill="#FFB6A3"/>
+                                <ellipse cx="-30" cy="10" rx="12" ry="14" fill="#228B22"/>
+                            </g>
+                            <text x="150" y="190" font-size="16" font-weight="bold" text-anchor="middle" fill="#FF6B4A">Curry</text>
+                        </svg>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Chicken Tikka Masala</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 45 min</span>
+                            <span><i class="fas fa-fire"></i> 520 cal</span>
+                            <span><i class="fas fa-star"></i> 4.8 (423)</span>
+                        </div>
+                        <p>Tender chicken in creamy tomato sauce with aromatic spices. Indian restaurant classic.</p>
+                        <button class="btn btn-small">
+                            <i class="fas fa-arrow-right"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recipe Card 6 -->
+                <div class="recipe-card">
+                    <div class="recipe-image">
+                        <svg viewBox="0 0 300 200" class="recipe-svg">
+                            <rect width="300" height="200" fill="#f9f9f9"/>
+                            <circle cx="150" cy="100" r="80" fill="white" stroke="#FF6B4A" stroke-width="2"/>
+                            <g transform="translate(150, 100)">
+                                <rect x="-45" y="-50" width="90" height="80" fill="#8FBC8F" rx="8"/>
+                                <circle cx="-20" cy="-20" r="12" fill="#90EE90"/>
+                                <circle cx="0" cy="-25" r="13" fill="#90EE90"/>
+                                <circle cx="20" cy="-18" r="12" fill="#90EE90"/>
+                                <ellipse cx="0" cy="20" rx="35" ry="18" fill="#90EE90"/>
+                            </g>
+                            <text x="150" y="190" font-size="16" font-weight="bold" text-anchor="middle" fill="#FF6B4A">Smoothie</text>
+                        </svg>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Green Detox Smoothie</h3>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 5 min</span>
+                            <span><i class="fas fa-fire"></i> 150 cal</span>
+                            <span><i class="fas fa-star"></i> 4.6 (298)</span>
+                        </div>
+                        <p>Refreshing blend of spinach, banana, and coconut milk. Perfect for breakfast!</p>
+                        <button class="btn btn-small">
+                            <i class="fas fa-arrow-right"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <button class="btn btn-primary btn-large">
+                    <i class="fas fa-search"></i> Browse All Recipes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORIES ==================== -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <h2>Recipe Categories</h2>
+            <p class="section-subtitle">Find recipes by meal type or cuisine</p>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🥞</div>
+                    <h3>Breakfast</h3>
+                    <p>Start your day right with our delicious breakfast recipes</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍱</div>
+                    <h3>Lunch</h3>
+                    <p>Satisfying lunch ideas for weekdays and weekends</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍽️</div>
+                    <h3>Dinner</h3>
+                    <p>Impressive dinner recipes for every occasion</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍰</div>
+                    <h3>Desserts</h3>
+                    <p>Sweet treats and delicious dessert recipes</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥗</div>
+                    <h3>Salads</h3>
+                    <p>Fresh and healthy salad combinations</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🌮</div>
+                    <h3>International</h3>
+                    <p>Cuisines from around the world</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥑</div>
+                    <h3>Healthy</h3>
+                    <p>Nutritious recipes for healthy living</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">⚡</div>
+                    <h3>Quick & Easy</h3>
+                    <p>Recipes that take 30 minutes or less</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <h2>Why Choose RecipeHub?</h2>
+            <p class="section-subtitle">The ultimate cooking companion</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <h3>Detailed Instructions</h3>
+                    <p>Step-by-step instructions with photos to guide you through every recipe with confidence.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-shoppingcart"></i>
+                    </div>
+                    <h3>Smart Shopping List</h3>
+                    <p>Auto-generate shopping lists from recipes and adjust quantities based on servings.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <h3>Nutritional Info</h3>
+                    <p>Complete calorie, protein, carbs, and nutrient information for each recipe.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-filter"></i>
+                    </div>
+                    <h3>Smart Filters</h3>
+                    <p>Filter by dietary restrictions, cooking time, difficulty level, and more.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <h3>Save Favorites</h3>
+                    <p>Create personalized collections and save your favorite recipes for quick access.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Community Reviews</h3>
+                    <p>Read reviews and tips from home cooks who've made these recipes successfully.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS ==================== -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How RecipeHub Works</h2>
+            <p class="section-subtitle">Cooking made simple in 3 steps</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Search</h3>
+                    <p>Browse by cuisine, cooking time, ingredients, or dietary preferences.</p>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Plan</h3>
+                    <p>Review ingredients and instructions. Add to shopping list automatically.</p>
+                    <div class="step-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Cook</h3>
+                    <p>Follow step-by-step instructions and enjoy your delicious homemade meal!</p>
+                    <div class="step-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <p class="section-subtitle">Join over 500,000 happy home cooks</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"RecipeHub has transformed my cooking! The recipes are easy to follow and always turn out amazing. My family loves the meals I make now!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Jessica Martinez</h4>
+                            <small>Home Cook</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Best recipe app ever! The shopping list feature saves me so much time, and I love being able to filter recipes by cooking time."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>David Thompson</h4>
+                            <small>Busy Professional</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The nutritional information is incredibly helpful for my diet. RecipeHub makes healthy eating delicious and easy!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <small>Fitness Enthusiast</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I'm a beginner in the kitchen, but these recipes are so detailed that anyone can follow them. I've already made 10+ dishes!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Michael Chen</h4>
+                            <small>Beginner Cook</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The user community is amazing! Reading reviews and tips from other cooks has helped me improve my cooking skills significantly."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Emily Rodriguez</h4>
+                            <small>Food Blogger</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"RecipeHub's international recipes have taken me on a culinary journey around the world. Absolutely love it!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Robert Kim</h4>
+                            <small>Adventure Seeker</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions</p>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is RecipeHub really free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! RecipeHub is completely free to use. We support our service through optional premium features and relevant advertising. There are no hidden charges or surprise fees.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I save my favorite recipes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can save your favorite recipes to personalized collections. Simply click the bookmark icon on any recipe to save it for quick access later.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How accurate is the nutritional information?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our nutritional information is calculated from USDA food database and updated regularly. Values are approximate and can vary based on specific ingredients and preparation methods.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I adjust recipe serving sizes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can adjust the serving size for any recipe, and all ingredient quantities will automatically scale proportionally. The nutritional information will also update accordingly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I use the shopping list feature?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Click "Add to Shopping List" on any recipe to automatically generate a list of ingredients. You can combine ingredients from multiple recipes and organize by store sections.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I filter recipes by dietary restrictions?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer filters for vegetarian, vegan, gluten-free, dairy-free, nut-free, and many other dietary preferences. Use our advanced search to find recipes that match your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I submit my own recipes?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We'd love to feature your recipes! Visit our submission page to share your original recipes with our community. All submissions are reviewed before being published.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is there an app version?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>RecipeHub works on all devices through your web browser - no app installation needed. It's responsive and works perfectly on smartphones, tablets, and computers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Cooking?</h2>
+                <p>Discover thousands of delicious recipes and become the chef of your kitchen today!</p>
+                <button class="btn btn-primary" onclick="document.getElementById('recipes').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-arrow-right"></i> Browse Recipes Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>RecipeHub</h4>
+                    <p>Your ultimate destination for delicious recipes from around the world. Cook, learn, and enjoy amazing food every day.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="/sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Report an Issue</a></li>
+                        <li><a href="#">Submit a Recipe</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 RecipeHub. All rights reserved. Made with <i class="fas fa-heart"></i> for food lovers everywhere.</p>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">Cooking made simple • Community driven • 100% Free</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="app.js"></script>
+</body>
+</html>

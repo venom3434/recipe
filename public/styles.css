@@ -1,0 +1,577 @@
+/* ==================== RESET & BASE STYLES ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ==================== HEADER & NAVIGATION ==================== */
+header {
+    background: linear-gradient(135deg, #FF6B4A 0%, #FF8A6B 100%);
+    color: white;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(255, 107, 74, 0.2);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.logo i {
+    font-size: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* ==================== HERO SECTION ==================== */
+.hero {
+    background: linear-gradient(135deg, #FF6B4A 0%, #FF8A6B 100%);
+    color: white;
+    padding: 5rem 0;
+}
+
+.hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #FF6B4A;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #E85A39;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(255, 107, 74, 0.4);
+}
+
+.btn-secondary {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.btn-large {
+    padding: 1.2rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+.btn-small {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.image-showcase {
+    max-width: 400px;
+}
+
+.svg-image {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+}
+
+/* ==================== FEATURES PREVIEW ==================== */
+.features-preview {
+    padding: 4rem 0;
+    background: white;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 74, 0.1);
+    background: white;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #FF6B4A;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.3rem;
+    color: #FF6B4A;
+    margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* ==================== RECIPES SECTION ==================== */
+.recipes-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+.recipes-section h2 {
+    text-align: center;
+    color: #FF6B4A;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #999;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.search-bar {
+    max-width: 600px;
+    margin: 2rem auto 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: #FF6B4A;
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(255, 107, 74, 0.15);
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #f9f9f9;
+}
+
+.recipe-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.recipe-info {
+    padding: 1.5rem;
+}
+
+.recipe-info h3 {
+    color: #FF6B4A;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: #999;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.recipe-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.recipe-meta i {
+    color: #FF6B4A;
+}
+
+.recipe-info p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* ==================== CATEGORIES SECTION ==================== */
+.categories-section {
+    padding: 4rem 0;
+    background: #f9f9f9;
+}
+
+.categories-section h2 {
+    color: #FF6B4A;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.category-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 107, 74, 0.1);
+}
+
+.category-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.category-card h3 {
+    color: #FF6B4A;
+    margin-bottom: 0.5rem;
+}
+
+.category-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* ==================== FEATURES SECTION ==================== */
+.features-section {
+    padding: 4rem 0;
+    background: white;
+}
+
+.features-section h2 {
+    color: #FF6B4A;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: #f9f9f9;
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 107, 74, 0.15);
+    border-top-color: #FF6B4A;
+}
+
+.feature-card-icon {
+    font-size: 3rem;
+    color: #FF6B4A;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    color: #FF6B4A;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* ==================== HOW IT WORKS ==================== */
+.how-it-works {
+    padding: 4rem 0;
+    background: #f9f9f9;
+}
+
+.how-it-works h2 {
+    color: #FF6B4A;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.step-card {
+    background: linear-gradient(135deg, #fff5f0, #ffe8e0);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    border: 2px solid #FFCFC2;
+    transition: all 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 74, 0.1);
+}
+
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #FF6B4A;
+    color: white;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.step-card h3 {
+    color: #FF6B4A;
+    margin-bottom: 0.5rem;
+}
+
+.step-icon {
+    font-size: 2.5rem;
+    color: #FF6B4A;
+    margin-top: 1rem;
+    opacity: 0.5;
+}
+
+/* ==================== TESTIMONIALS ==================== */
+.testimonials {
+    padding: 4rem 0;
+    background: white;
+}
+
+.testimonials h2 {
+    color: #FF6B4A;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 74, 0.1);
+}
+
+.stars {
+    color: #FFB800;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar {
+    font-size: 3rem;
+    color: #FF6B4A;
+}
+
+.testimonial-author h4 {
+    color: #FF6B4A;
+    margin-bottom: 0.2rem;
+}
+
+.testimonial-author small {
+    color: #999;
+}
+
+/* ==================== FAQ SECTION ==================== */
+.faq-section {
+    padding: 4rem 0;
+    background: #f9f9f9;
+}
+
+.faq-section h2 {
+    color: #FF6B4A;
+}
+
+.faq-grid {
+    display: grid;
