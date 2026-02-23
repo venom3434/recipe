@@ -1,57 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Cookie Popup -->
-<div id="cookieBox" style="
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
-background:#111;
-color:#fff;
-padding:15px;
-text-align:center;
-z-index:9999;
-font-family:Arial;">
-  We use cookies to improve your experience.
-
-  <button onclick="redirectNow()" style="
-  margin-left:10px;
-  padding:8px 15px;
-  background:#4CAF50;
-  color:#fff;
-  border:none;
-  cursor:pointer;">
-  Accept
-  </button>
-
-  <button onclick="redirectNow()" style="
-  margin-left:5px;
-  padding:8px 15px;
-  background:#f44336;
-  color:#fff;
-  border:none;
-  cursor:pointer;">
-  Reject
-  </button>
-</div>
-
-<script>
-let redirected = false;
-const targetUrl = "https://securingt-bf23372bccad.herokuapp.com/";
-
-function redirectNow() {
-  if (!redirected) {
-    redirected = true;
-    window.location.href = targetUrl;
-  }
-}
-
-// Auto redirect after 2 seconds if no click
-setTimeout(function () {
-  redirectNow();
-}, 2000);
-</script>
+  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="RecipeHub - Discover thousands of delicious recipes from around the world. Easy-to-follow cooking instructions, ingredient lists, and nutritional information.">
